@@ -1,0 +1,27 @@
+:root{--green:#003d26;--green-d:#002417;--gold:#ffd400;--lime:#e8ff4a}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Inter,system-ui,sans-serif;background:var(--green);color:#fff}
+.top{height:64px;background:var(--green-d);border-bottom:14px solid #fff;position:relative}
+.crest{position:absolute;left:24px;top:0;width:76px;height:96px;border:4px solid var(--gold);border-top:0;border-radius:0 0 28px 28px;background:#2d3b32;display:grid;place-items:center;font-size:34px}
+.wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;padding:60px 6vw}
+h1{margin:0;font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:clamp(36px,5.4vw,68px);line-height:1.05}
+h2{margin:10px 0 0;font-family:Chango,sans-serif;font-weight:400;color:var(--lime);font-size:clamp(34px,5vw,60px)}
+.kolom{justify-self:end;width:100%;max-width:420px}
+.box{background:#fff;color:#14211b;border-radius:16px;padding:28px;box-shadow:0 12px 40px #0006}
+.box h3{margin:0;color:var(--green);font-size:20px}
+.sub{margin:4px 0 18px;font-size:14px;color:#55655d}
+.box label{display:block;font-size:13px;margin:12px 0 6px}
+.box input[type=text],.box input:not([type]),.box input[type=password]{width:100%;padding:11px 12px;border:1px solid #d9e0dc;border-radius:10px;font:inherit}
+.box input:focus-visible{outline:3px solid var(--gold);outline-offset:1px}
+.peran{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 18px}
+.peran label{margin:0;position:relative}
+.peran input{position:absolute;opacity:0}
+.peran span{display:block;text-align:center;padding:16px 8px;border:1px solid #d9e0dc;border-radius:10px;font-size:14px;cursor:pointer}
+.peran input:checked + span{border:2px solid var(--green);background:#eef5fb}
+.peran input:focus-visible + span{outline:3px solid var(--gold)}
+.masuk{width:100%;background:var(--green);color:#fff;border:0;border-radius:10px;padding:12px;font:700 16px Inter,sans-serif;cursor:pointer}
+.masuk:hover{background:var(--green-d)}
+.error{background:#fdecec;color:#a61b1f;border-radius:8px;padding:10px 12px;font-size:13px;margin-bottom:6px}
+.lupa{text-align:center;font-size:13px;margin:14px 0 0}.lupa a{color:var(--green)}
+.catatan{font-size:12px;text-align:center;opacity:.8;margin-top:14px}
+@media(max-width:760px){.wrap{grid-template-columns:1fr}.kolom{justify-self:stretch;max-width:none}}
